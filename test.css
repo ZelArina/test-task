@@ -1,0 +1,128 @@
+html{
+    font-family: "Inter", sans-serif;
+}
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+  }
+body{
+    max-width: 1024px;
+    height: 100vh;
+    background: rgb(94, 94, 94);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    width: 743px;
+    height: 91px;
+    border-radius: 10px;
+    background: rgb(53, 121, 245);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-contaiter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.progress{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    margin: 16px 16px 15px 22px;
+}
+:root {
+    --progress: 5;
+}
+  
+.progress-circle {
+    width: 100%;
+    height: 100%;
+    transform: rotate(-90deg);
+}
+
+.circle-bg {
+    fill: none;
+    stroke: rgba(255, 255, 255, 0.5);
+    stroke-width: 1px;
+}
+
+.circle {
+    fill: none;
+    stroke: rgba(255, 255, 255);
+    stroke-width: 1.5px;
+    stroke-dasharray: 100, 100;
+    stroke-dashoffset: calc(100 - var(--progress));
+    transition: stroke-dashoffset 0.5s;
+    stroke-linecap: round;
+}
+
+.percentage {
+    position: absolute;
+    width: 32px;
+    height: 30px;
+    left: 14px;
+    top: 15px;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+.descrip{
+    width: 389px;
+    margin: 16px 68px 15px 0px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 4px;
+    
+}
+.check{
+    width: 76px;
+    height: 18px;
+    padding: 0px 10px 0px 10px;
+    border-radius: 40px;
+    background: rgb(35, 100, 219);
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+p {
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin: 0px;
+}
+p:last-child {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+button{
+    width: 170px;
+    height: 40px;
+    margin: 26px 18px 25px 0px;
+    padding: 0px;
+    border-radius: 6px;
+    border: none;
+    background: rgb(244, 248, 255);
+    color: rgb(71, 119, 237);
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: center;
+}
